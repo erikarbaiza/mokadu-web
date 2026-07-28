@@ -72,9 +72,7 @@ a { color: inherit; }
 }
 
 #nav.scrolled {
-  background: rgba(253, 248, 240, 0.96);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: rgba(253, 248, 240, 0.97);
   padding: 0.8rem 2.5rem;
   box-shadow: 0 1px 0 var(--border);
 }
