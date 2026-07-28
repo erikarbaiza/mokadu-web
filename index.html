@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MOKADU — Sandwiches, cócteles y vinos. Licenciado Poza, 34 · Bilbao.">
+  <title>MOKADU — Bilbao</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <a href="#hero" class="nav-logo">mokadu</a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" role="list">
+      <li><a href="#concepto">Concepto</a></li>
+      <li><a href="#carta">Carta</a></li>
+      <li><a href="#horarios">Horarios</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-logo-circle" aria-label="Mokadu">
+        <span>mokadu</span>
+      </div>
+      <p class="hero-tagline">Sandwiches, cócteles y vinos</p>
+      <p class="hero-sub">Con las manos · Licenciado Poza, 34 · Bilbao</p>
+      <a href="#carta" class="btn-primary">Ver la carta</a>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- CONCEPTO -->
+  <section id="concepto">
+    <div class="container">
+      <div class="concepto-grid">
+        <div class="concepto-text reveal">
+          <span class="section-label">El concepto</span>
+          <h2>Un menú breve.<br>Un sabor distinto.</h2>
+          <p>En Mokadu elevamos el bocadillo a categoría gastronómica. Sabores del mundo, técnica honesta, productos de calidad — todo pensado para comerse con las manos.</p>
+          <p>Un espacio íntimo en el corazón de Bilbao, con alma de bistró parisino y espíritu propio.</p>
+        </div>
+        <div class="concepto-stats reveal">
+          <div class="stat">
+            <span class="stat-number">9,8</span>
+            <span class="stat-label">Valoración media</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">+40</span>
+            <span class="stat-label">Comensales</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">~30€</span>
+            <span class="stat-label">Por persona</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOTOS -->
+  <section id="fotos" class="fotos-section">
+    <div class="fotos-grid">
+      <div class="foto-slot foto-slot--tall">
+        <img src="img/foto-lettuce-wraps.webp" alt="Bocado de lechuga crujiente con pollo, salsa y sésamo">
+      </div>
+      <div class="foto-slot">
+        <img src="img/foto-rosbiti.webp" alt="Bocadillo Rosbiti con pan de centeno, rosbif y tomates">
+      </div>
+      <div class="foto-slot">
+        <img src="img/foto-brigadeiros.webp" alt="Brigadeiros — postre brasileño de chocolate">
+      </div>
+      <div class="foto-slot">
+        <img src="img/foto-ciabatta.webp" alt="Bocadillo con tortilla española en pan ciabatta">
+      </div>
+      <div class="foto-slot">
+        <img src="img/foto-equipo.webp" alt="El equipo de Mokadu con los platos del día">
+      </div>
+      <div class="foto-slot foto-slot--wide">
+        <img src="img/foto-cocteles.webp" alt="Cócteles de Mokadu — copas con bebida blanca refrescante">
+      </div>
+    </div>
+  </section>
+
+  <!-- CARTA -->
+  <section id="carta">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Para picar</span>
+        <h2>La carta</h2>
+        <p class="section-subtitle">Breve. Honesta. Siempre fresca.</p>
+      </div>
+
+      <div class="menu-tabs reveal" role="tablist">
+        <button class="tab-btn active" data-tab="bocados" role="tab" aria-selected="true">Bocados</button>
+        <button class="tab-btn" data-tab="bebidas" role="tab" aria-selected="false">Bebidas</button>
+        <button class="tab-btn" data-tab="postres" role="tab" aria-selected="false">Postres</button>
+      </div>
+
+      <div class="menu-grid" id="tab-bocados" role="tabpanel">
+        <article class="menu-item reveal">
+          <div class="menu-item-dot" aria-hidden="true"></div>
+          <h3>PDT</h3>
+          <p>El clásico que no se va</p>
+        </article>
+        <article class="menu-item reveal">
+          <div class="menu-item-dot" aria-hidden="true"></div>
+          <h3>Playeros</h3>
+          <p>De los que se quedan toda la temporada</p>
+        </article>
+        <article class="menu-item reveal">
+          <div class="menu-item-dot" aria-hidden="true"></div>
+          <h3>Ice-Dwich</h3>
+          <p>Frío, distinto, imprescindible</p>
+        </article>
+        <article class="menu-item reveal">
+          <div class="menu-item-dot" aria-hidden="true"></div>
+          <h3>Sa-aM</h3>
+          <p class="menu-tag">Nuevo · Verano</p>
+        </article>
+        <article class="menu-item reveal">
+          <div class="menu-item-dot" aria-hidden="true"></div>
+          <h3>Crème à la Edgar</h3>
+          <p class="menu-tag">Nuevo · Verano</p>
+        </article>
+        <article class="menu-item reveal">
+          <div class="menu-item-dot" aria-hidden="true"></div>
+          <h3>Nikita</h3>
+          <p class="menu-tag">Nuevo · Verano</p>
+        </article>
+        <article class="menu-item reveal">
+          <div class="menu-item-dot" aria-hidden="true"></div>
+          <h3>La Chilenita</h3>
+          <p class="menu-tag">Nuevo · Verano</p>
+        </article>
+        <article class="menu-item reveal">
+          <div class="menu-item-dot" aria-hidden="true"></div>
+          <h3>Rosbiti</h3>
+          <p class="menu-tag">Nuevo · Verano</p>
+        </article>
+        <article class="menu-item reveal">
+          <div class="menu-item-dot" aria-hidden="true"></div>
+          <h3>Sal del coche</h3>
+          <p class="menu-tag">Nuevo · Verano</p>
+        </article>
+      </div>
+
+      <div class="menu-grid hidden" id="tab-bebidas" role="tabpanel">
+        <article class="menu-item reveal">
+          <div class="menu-item-dot" aria-hidden="true"></div>
+          <h3>Espresso Martini</h3>
+          <p>Vodka · licor de café · espresso</p>
+        </article>
+        <article class="menu-item reveal">
+          <div class="menu-item-dot" aria-hidden="true"></div>
+          <h3>Margabirra</h3>
+          <p>Margarita frozen con cerveza artesana</p>
+        </article>
+        <article class="menu-item reveal">
+          <div class="menu-item-dot" aria-hidden="true"></div>
+          <h3>Margarita Frozen</h3>
+          <p>Tequila · triple sec · lima</p>
+        </article>
+        <article class="menu-item reveal">
+          <div class="menu-item-dot" aria-hidden="true"></div>
+          <h3>Porn Star</h3>
+          <p>Vodka · fruta de la pasión · prosecco</p>
+        </article>
+        <article class="menu-item reveal">
+          <div class="menu-item-dot" aria-hidden="true"></div>
+          <h3>Lemonada de Albahaca</h3>
+          <p>Sin alcohol · limón · albahaca fresca · soda</p>
+        </article>
+        <article class="menu-item reveal">
+          <div class="menu-item-dot" aria-hidden="true"></div>
+          <h3>Vinos</h3>
+          <p>Selección de pequeños productores curada por Inés</p>
+        </article>
+      </div>
+      <div class="menu-grid hidden" id="tab-postres" role="tabpanel">
+        <article class="menu-item reveal">
+          <div class="menu-item-dot" aria-hidden="true"></div>
+          <h3>Brigadeiros</h3>
+          <p>De @ana_clara_paula_ · dulce brasileño</p>
+        </article>
+        <article class="menu-item reveal">
+          <div class="menu-item-dot" aria-hidden="true"></div>
+          <h3>Sorbete de limón & cava</h3>
+          <p>Fresco, refrescante, de verano</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- HORARIOS -->
+  <section id="horarios">
+    <div class="container">
+      <div class="horarios-grid">
+        <div class="horarios-intro reveal">
+          <span class="section-label">Cuándo</span>
+          <h2>Horarios</h2>
+          <p>Reservas disponibles por teléfono o en persona.</p>
+          <a href="tel:+34621011201" class="btn-primary">Llamar ahora</a>
+        </div>
+        <div class="horarios-tabla reveal">
+          <div class="dia-row closed">
+            <span class="dia">Lunes</span>
+            <span class="hora">Cerrado</span>
+          </div>
+          <div class="dia-row">
+            <span class="dia">Martes · Miércoles</span>
+            <span class="hora">13:30–16:15 / 19:30–22:30</span>
+          </div>
+          <div class="dia-row">
+            <span class="dia">Jueves</span>
+            <span class="hora">13:30–16:30 / 19:30–23:30</span>
+          </div>
+          <div class="dia-row highlight">
+            <span class="dia">Viernes · Sábado</span>
+            <span class="hora">13:30–17:00 / 19:00–01:30</span>
+          </div>
+          <div class="dia-row closed">
+            <span class="dia">Domingo</span>
+            <span class="hora">Cerrado</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto">
+    <div class="container">
+      <div class="contacto-grid">
+        <div class="contacto-info reveal">
+          <span class="section-label">Encuéntranos</span>
+          <h2>Ven a vernos</h2>
+          <div class="contacto-dato">
+            <span class="dato-label">Dirección</span>
+            <span class="dato-valor">Licenciado Poza, 34<br>48009 Bilbao, Bizkaia</span>
+          </div>
+          <div class="contacto-dato">
+            <span class="dato-label">Teléfono</span>
+            <a href="tel:+34621011201" class="dato-valor link">+34 621 011 201</a>
+          </div>
+          <div class="contacto-social">
+            <a href="https://www.instagram.com/mokadubilbao" target="_blank" rel="noopener noreferrer">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+              Instagram
+            </a>
+            <a href="https://www.tiktok.com/@mokadu.bilbao" target="_blank" rel="noopener noreferrer">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.3 6.3 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.93a8.19 8.19 0 0 0 4.79 1.54V7.02a4.86 4.86 0 0 1-1.02-.33z"/></svg>
+              TikTok
+            </a>
+          </div>
+        </div>
+        <div class="contacto-mapa reveal">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.24!2d-2.9281!3d43.2627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e4f87c2b9e37d%3A0x0!2sLicenciado+Poza%2C+34%2C+48009+Bilbao!5e0!3m2!1ses!2ses!4v1"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Ubicación de MOKADU en Bilbao"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">mokadu</span>
+        <p>Licenciado Poza, 34 · 48009 Bilbao</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/mokadubilbao" target="_blank" rel="noopener noreferrer">@mokadubilbao</a>
+        </div>
+        <p class="footer-copy">© 2026 Mokadu. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
