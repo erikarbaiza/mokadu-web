@@ -98,92 +98,116 @@
   <!-- CARTA -->
   <section id="carta">
     <div class="container">
-      <div class="section-header reveal">
+
+      <div class="carta-header-inner reveal">
         <span class="section-label">Para picar</span>
         <h2>La carta</h2>
-        <p class="section-subtitle">Breve. Honesta. Siempre fresca.</p>
+        <div class="title-rule">
+          <span class="season">Verano · 2026</span>
+        </div>
+        <p class="carta-subtitle">Breve. Honesta. Siempre fresca.</p>
       </div>
 
-      <div class="menu-tabs reveal" role="tablist">
-        <button class="tab-btn active" data-tab="bocados" role="tab" aria-selected="true">Bocados</button>
-        <button class="tab-btn" data-tab="bebidas" role="tab" aria-selected="false">Bebidas</button>
-        <button class="tab-btn" data-tab="postres" role="tab" aria-selected="false">Postres</button>
-      </div>
+      <div class="carta-grid reveal">
 
-      <div class="menu-grid" id="tab-bocados" role="tabpanel">
-        <article class="menu-item reveal">
-          <h3>PDT</h3>
-          <p>El clásico que no se va</p>
-        </article>
-        <article class="menu-item reveal">
-          <h3>Playeros</h3>
-          <p>De los que se quedan toda la temporada</p>
-        </article>
-        <article class="menu-item reveal">
-          <h3>Ice-Dwich</h3>
-          <p>Frío, distinto, imprescindible</p>
-        </article>
-        <article class="menu-item reveal">
-          <h3>Sa-aM <span class="menu-tag">Nuevo</span></h3>
-          <p>–</p>
-        </article>
-        <article class="menu-item reveal">
-          <h3>Crème à la Edgar <span class="menu-tag">Nuevo</span></h3>
-          <p>–</p>
-        </article>
-        <article class="menu-item reveal">
-          <h3>Nikita <span class="menu-tag">Nuevo</span></h3>
-          <p>–</p>
-        </article>
-        <article class="menu-item reveal">
-          <h3>La Chilenita <span class="menu-tag">Nuevo</span></h3>
-          <p>–</p>
-        </article>
-        <article class="menu-item reveal">
-          <h3>Rosbiti <span class="menu-tag">Nuevo</span></h3>
-          <p>–</p>
-        </article>
-        <article class="menu-item reveal">
-          <h3>Sal del coche <span class="menu-tag">Nuevo</span></h3>
-          <p>–</p>
-        </article>
-      </div>
+        <nav class="carta-nav" role="tablist" aria-label="Categorías de la carta">
+          <button class="nav-btn active" data-tab="bocados" role="tab" aria-selected="true" aria-controls="panel-bocados">
+            <span class="nav-name">Bocados</span>
+            <span class="nav-desc">El mundo en un pan. Nuestra razón de ser.</span>
+            <span class="nav-count">9 platos</span>
+          </button>
+          <button class="nav-btn" data-tab="bebidas" role="tab" aria-selected="false" aria-controls="panel-bebidas">
+            <span class="nav-name">Bebidas</span>
+            <span class="nav-desc">Cócteles de autor y vinos de pequeños productores.</span>
+            <span class="nav-count">6 opciones</span>
+          </button>
+          <button class="nav-btn" data-tab="postres" role="tab" aria-selected="false" aria-controls="panel-postres">
+            <span class="nav-name">Postres</span>
+            <span class="nav-desc">Para cerrar con algo dulce y con carácter.</span>
+            <span class="nav-count">2 dulces</span>
+          </button>
+        </nav>
 
-      <div class="menu-grid hidden" id="tab-bebidas" role="tabpanel">
-        <article class="menu-item reveal">
-          <h3>Espresso Martini</h3>
-          <p>Vodka · licor de café · espresso</p>
-        </article>
-        <article class="menu-item reveal">
-          <h3>Margabirra</h3>
-          <p>Margarita frozen con cerveza artesana</p>
-        </article>
-        <article class="menu-item reveal">
-          <h3>Margarita Frozen</h3>
-          <p>Tequila · triple sec · lima</p>
-        </article>
-        <article class="menu-item reveal">
-          <h3>Porn Star</h3>
-          <p>Vodka · fruta de la pasión · prosecco</p>
-        </article>
-        <article class="menu-item reveal">
-          <h3>Lemonada de Albahaca</h3>
-          <p>Sin alcohol · limón · albahaca fresca · soda</p>
-        </article>
-        <article class="menu-item reveal">
-          <h3>Vinos</h3>
-          <p>Selección de pequeños productores curada por Inés</p>
-        </article>
-      </div>
-      <div class="menu-grid hidden" id="tab-postres" role="tabpanel">
-        <article class="menu-item reveal">
-          <h3>Brigadeiros</h3>
-          <p>De @ana_clara_paula_ · dulce brasileño</p>
-        </article>
-        <article class="menu-item reveal">
-          <h3>Sorbete de limón & cava</h3>
-          <p>Fresco, refrescante, de verano</p>
-        </article>
+        <div class="carta-panel">
+
+          <ul class="dish-list active" id="panel-bocados" role="tabpanel">
+            <li class="dish-item">
+              <p class="dish-name">PDT</p>
+              <p class="dish-desc">El clásico que no se va</p>
+            </li>
+            <li class="dish-item">
+              <p class="dish-name">Playeros</p>
+              <p class="dish-desc">De los que se quedan toda la temporada</p>
+            </li>
+            <li class="dish-item">
+              <p class="dish-name">Ice-Dwich</p>
+              <p class="dish-desc">Frío, distinto, imprescindible</p>
+            </li>
+            <li class="dish-item">
+              <p class="dish-name">Sa-aM <span class="dish-tag">Nuevo</span></p>
+              <p class="dish-ask">Pregunta al equipo</p>
+            </li>
+            <li class="dish-item">
+              <p class="dish-name">Crème à la Edgar <span class="dish-tag">Nuevo</span></p>
+              <p class="dish-ask">Pregunta al equipo</p>
+            </li>
+            <li class="dish-item">
+              <p class="dish-name">Nikita <span class="dish-tag">Nuevo</span></p>
+              <p class="dish-ask">Pregunta al equipo</p>
+            </li>
+            <li class="dish-item">
+              <p class="dish-name">La Chilenita <span class="dish-tag">Nuevo</span></p>
+              <p class="dish-ask">Pregunta al equipo</p>
+            </li>
+            <li class="dish-item">
+              <p class="dish-name">Rosbiti <span class="dish-tag">Nuevo</span></p>
+              <p class="dish-ask">Pregunta al equipo</p>
+            </li>
+            <li class="dish-item">
+              <p class="dish-name">Sal del coche <span class="dish-tag">Nuevo</span></p>
+              <p class="dish-ask">Pregunta al equipo</p>
+            </li>
+          </ul>
+
+          <ul class="dish-list" id="panel-bebidas" role="tabpanel">
+            <li class="dish-item">
+              <p class="dish-name">Espresso Martini</p>
+              <p class="dish-desc">Vodka · licor de café · espresso</p>
+            </li>
+            <li class="dish-item">
+              <p class="dish-name">Margabirra</p>
+              <p class="dish-desc">Margarita frozen con cerveza artesana</p>
+            </li>
+            <li class="dish-item">
+              <p class="dish-name">Margarita Frozen</p>
+              <p class="dish-desc">Tequila · triple sec · lima</p>
+            </li>
+            <li class="dish-item">
+              <p class="dish-name">Porn Star</p>
+              <p class="dish-desc">Vodka · fruta de la pasión · prosecco</p>
+            </li>
+            <li class="dish-item">
+              <p class="dish-name">Lemonada de Albahaca</p>
+              <p class="dish-desc">Sin alcohol · limón · albahaca fresca · soda</p>
+            </li>
+            <li class="dish-item">
+              <p class="dish-name">Vinos</p>
+              <p class="dish-desc">Selección de pequeños productores curada por Inés</p>
+            </li>
+          </ul>
+
+          <ul class="dish-list" id="panel-postres" role="tabpanel">
+            <li class="dish-item">
+              <p class="dish-name">Brigadeiros</p>
+              <p class="dish-desc">De @ana_clara_paula_ · dulce brasileño</p>
+            </li>
+            <li class="dish-item">
+              <p class="dish-name">Sorbete de limón & cava</p>
+              <p class="dish-desc">Fresco, refrescante, de verano</p>
+            </li>
+          </ul>
+
+        </div>
       </div>
     </div>
   </section>

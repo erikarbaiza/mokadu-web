@@ -16,24 +16,24 @@ const io = new IntersectionObserver((entries) => {
 
 reveals.forEach(el => io.observe(el));
 
-// ── Carta tabs ──
-document.querySelectorAll('.tab-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    document.querySelectorAll('.tab-btn').forEach(b => {
-      b.classList.remove('active');
-      b.setAttribute('aria-selected', 'false');
-    });
-    document.querySelectorAll('.menu-grid').forEach(g => g.classList.add('hidden'));
+// ── Carta nav ──
+const navBtns = document.querySelectorAll('.nav-btn');
+const dishPanels = document.querySelectorAll('.dish-list');
 
+navBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    if (btn.classList.contains('active')) return;
+
+    navBtns.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected', 'false'); });
     btn.classList.add('active');
     btn.setAttribute('aria-selected', 'true');
-    const panel = document.getElementById(`tab-${btn.dataset.tab}`);
-    panel.classList.remove('hidden');
 
-    // re-trigger reveal for newly shown items
-    panel.querySelectorAll('.reveal:not(.visible)').forEach((el, i) => {
-      setTimeout(() => el.classList.add('visible'), i * 80);
-    });
+    const current = document.querySelector('.dish-list.active');
+    if (current) current.classList.remove('active');
+
+    setTimeout(() => {
+      document.getElementById('panel-' + btn.dataset.tab).classList.add('active');
+    }, 180);
   });
 });
 
