@@ -386,61 +386,46 @@ a { color: inherit; }
 .tab-btn:not(.active):hover { color: var(--fg); }
 
 .menu-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .menu-item {
-  background: #fff;
-  border: 1px solid var(--border);
-  border-top: 3px solid var(--red);
-  padding: 1.8rem;
+  display: flex;
+  align-items: baseline;
+  gap: 2.5rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--border);
   position: relative;
-  transition: transform 0.3s var(--ease), box-shadow 0.3s;
 }
-.menu-item:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(204,28,28,0.1);
-}
+.menu-item:first-child { border-top: 1px solid var(--border); }
 
-/* Punto decorativo mínimo en vez de flores grandes */
-.menu-item-dot {
-  position: absolute;
-  top: 1.2rem;
-  right: 1.2rem;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--red);
-  opacity: 0.4;
-}
+.menu-item-dot { display: none; }
 
 .menu-item h3 {
   font-family: var(--serif);
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   font-weight: 400;
   color: var(--fg);
-  margin-bottom: 0.5rem;
-  padding-right: 1.5rem;
+  flex: 0 0 220px;
+  line-height: 1.4;
 }
 
 .menu-item p {
-  font-size: 0.83rem;
+  font-size: 0.82rem;
   color: var(--fg-muted);
   line-height: 1.6;
+  flex: 1;
 }
 
 .menu-tag {
-  display: inline-block;
-  font-size: 0.68rem !important;
+  font-size: 0.62rem !important;
   font-weight: 500;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--red) !important;
-  background: var(--red-lt);
-  padding: 0.2rem 0.6rem;
-  border-radius: 2px;
 }
 
 /* ── HORARIOS ── */
@@ -637,7 +622,8 @@ footer p { font-size: 0.8rem; color: var(--fg-muted); }
 
   .concepto-stats { flex-direction: column; gap: 1.5rem; }
 
-  .menu-grid { grid-template-columns: 1fr; }
+  .menu-item { flex-direction: column; gap: 0.4rem; }
+  .menu-item h3 { flex: none; }
 
   .dia-row { flex-direction: column; gap: 0.2rem; }
   .hora { text-align: left; }
