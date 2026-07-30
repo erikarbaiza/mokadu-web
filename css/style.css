@@ -198,6 +198,23 @@ a { color: inherit; }
 }
 .btn-primary:hover { background: transparent; color: var(--red); }
 
+.btn-secondary {
+  display: inline-block;
+  padding: 0.9rem 2.6rem;
+  background: transparent;
+  color: var(--red);
+  border: 1px solid var(--red);
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: background 0.3s, color 0.3s;
+}
+.btn-secondary:hover { background: var(--red); color: #fff; }
+
 .btn-outline {
   display: inline-block;
   margin-top: 1.8rem;
