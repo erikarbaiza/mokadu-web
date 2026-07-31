@@ -34,6 +34,41 @@ if (track) {
   });
 }
 
+// ── Reseñas: drag to scroll ──
+const resenaTrack = document.querySelector('.resenas-track');
+if (resenaTrack) {
+  let isDown = false, startX, scrollLeft;
+  resenaTrack.addEventListener('mousedown', e => {
+    isDown = true;
+    startX = e.pageX - resenaTrack.offsetLeft;
+    scrollLeft = resenaTrack.scrollLeft;
+    resenaTrack.classList.add('grabbing');
+  });
+  resenaTrack.addEventListener('mouseleave', () => { isDown = false; resenaTrack.classList.remove('grabbing'); });
+  resenaTrack.addEventListener('mouseup', () => { isDown = false; resenaTrack.classList.remove('grabbing'); });
+  resenaTrack.addEventListener('mousemove', e => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - resenaTrack.offsetLeft;
+    resenaTrack.scrollLeft = scrollLeft - (x - startX) * 1.4;
+  });
+}
+
+// ── FAQ acordeón ──
+document.querySelectorAll('.faq-q').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const isOpen = btn.getAttribute('aria-expanded') === 'true';
+    document.querySelectorAll('.faq-q').forEach(b => {
+      b.setAttribute('aria-expanded', 'false');
+      b.nextElementSibling.classList.remove('open');
+    });
+    if (!isOpen) {
+      btn.setAttribute('aria-expanded', 'true');
+      btn.nextElementSibling.classList.add('open');
+    }
+  });
+});
+
 // ── Mobile nav ──
 const toggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelector('.nav-links');
