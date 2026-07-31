@@ -13,29 +13,26 @@ const io = new IntersectionObserver((entries) => {
     io.unobserve(entry.target);
   });
 }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
-
 reveals.forEach(el => io.observe(el));
 
-// ── Carta nav ──
-const navBtns = document.querySelectorAll('.nav-btn');
-const dishPanels = document.querySelectorAll('.dish-list');
-
-navBtns.forEach(btn => {
-  btn.addEventListener('click', () => {
-    if (btn.classList.contains('active')) return;
-
-    navBtns.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected', 'false'); });
-    btn.classList.add('active');
-    btn.setAttribute('aria-selected', 'true');
-
-    const current = document.querySelector('.dish-list.active');
-    if (current) current.classList.remove('active');
-
-    setTimeout(() => {
-      document.getElementById('panel-' + btn.dataset.tab).classList.add('active');
-    }, 180);
+// ── Carta: drag to scroll ──
+const track = document.querySelector('.carta-scroll-track');
+if (track) {
+  let isDown = false, startX, scrollLeft;
+  track.addEventListener('mousedown', e => {
+    isDown = true;
+    startX = e.pageX - track.offsetLeft;
+    scrollLeft = track.scrollLeft;
   });
-});
+  track.addEventListener('mouseleave', () => { isDown = false; });
+  track.addEventListener('mouseup', () => { isDown = false; });
+  track.addEventListener('mousemove', e => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - track.offsetLeft;
+    track.scrollLeft = scrollLeft - (x - startX) * 1.4;
+  });
+}
 
 // ── Mobile nav ──
 const toggle = document.querySelector('.nav-toggle');

@@ -9,23 +9,22 @@
   <meta property="og:description" content="Bocadillos, cócteles y vinos en el corazón del Ensanche. Con las manos. Licenciado Poza, 34.">
   <meta property="og:type" content="restaurant">
   <title>MOKADU — Bocadillos, cócteles y vinos · Bilbao</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" href="img/logo-m.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <!-- NAV -->
   <nav id="nav">
-    <a href="#hero" class="nav-logo">mokadu</a>
+    <a href="#hero" class="nav-logo" aria-label="Mokadu — inicio">
+      <img src="img/logo-negro.png" alt="Mokadu" class="nav-logo-img">
+    </a>
     <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" role="list">
       <li><a href="#concepto">Concepto</a></li>
-      <li><a href="#carta">Carta</a></li>
+      <li><a href="#historia">La carta</a></li>
       <li><a href="#horarios">Horarios</a></li>
       <li><a href="#contacto">Contacto</a></li>
     </ul>
@@ -35,11 +34,11 @@
   <section id="hero">
     <div class="hero-content">
       <div class="hero-logo-circle" aria-label="Mokadu">
-        <span>mokadu</span>
+        <img src="img/logo-negro.png" alt="Mokadu">
       </div>
-      <p class="hero-tagline">Sandwiches, cócteles y vinos</p>
-      <p class="hero-sub">Con las manos · Licenciado Poza, 34 · Bilbao</p>
-      <a href="#carta" class="btn-primary">Ver la carta</a>
+      <p class="hero-tagline">Con las manos</p>
+      <p class="hero-sub">Sandwiches · Cócteles · Vinos · Licenciado Poza, 34 · Bilbao</p>
+      <a href="#historia" class="btn-primary">Ver la carta</a>
       <a href="https://mokadu.myrestoo.net/v2?view=reservation&lang=es" target="_blank" rel="noopener noreferrer" class="btn-secondary">Reservar mesa</a>
     </div>
     <div class="hero-scroll" aria-hidden="true">
@@ -56,7 +55,7 @@
           <span class="section-label">El concepto</span>
           <h2>Un menú breve.<br>Un sabor distinto.</h2>
           <p>En Mokadu elevamos el bocadillo a categoría gastronómica. Sabores del mundo, técnica honesta, productos de calidad — todo pensado para comerse con las manos.</p>
-          <p>Un espacio íntimo en el corazón de Bilbao, con alma de bistró parisino y espíritu propio.</p>
+          <p>Un espacio íntimo en el corazón de Bilbao, con alma de bistró y espíritu propio.</p>
         </div>
         <div class="concepto-stats reveal">
           <div class="stat">
@@ -80,137 +79,235 @@
   <section id="fotos" class="fotos-section">
     <div class="fotos-grid">
       <div class="foto-slot foto-slot--tall">
-        <img src="img/foto-playeros.jpg" alt="Playeros — manos compartiendo el bocado estrella de Mokadu">
+        <img src="img/foto-staff.jpg" alt="Mokadu — con las manos">
       </div>
       <div class="foto-slot">
-        <img src="img/foto-porco-rosso.jpg" alt="Porco Rosso — bocadillo de cerdo deshilachado con encurtidos y cebolla">
+        <img src="img/foto-mesa.jpg" alt="La mesa completa en Mokadu">
       </div>
       <div class="foto-slot">
-        <img src="img/foto-tostada.jpg" alt="Tostada Mokadu — presentación minimalista sobre plato ámbar">
+        <img src="img/foto-interior.jpg" alt="Interior de Mokadu — Licenciado Poza, 34">
       </div>
       <div class="foto-slot">
-        <img src="img/foto-pdt.jpg" alt="PDT — bocadillo clásico con patatas fritas Mokadu">
+        <img src="img/foto-platos.jpg" alt="Bocadillos y cócteles en Mokadu">
       </div>
       <div class="foto-slot">
-        <img src="img/foto-bar.jpg" alt="La barra de Mokadu — preparando cócteles de autor">
+        <img src="img/foto-vinos.jpg" alt="Selección de vinos de pequeños productores">
       </div>
       <div class="foto-slot foto-slot--wide">
-        <img src="img/foto-mesa.jpg" alt="Mesa completa en Mokadu — bocadillos, patatas y vino">
+        <img src="img/foto-bar.jpg" alt="Mokadu — ambiente y vinos">
       </div>
     </div>
   </section>
 
-  <!-- CARTA -->
-  <section id="carta">
-    <div class="container">
+  <!-- HISTORIA DEL MENÚ -->
+  <section id="historia">
 
-      <div class="carta-header-inner reveal">
-        <span class="section-label">Para picar</span>
-        <h2>La carta</h2>
-        <div class="title-rule">
-          <span class="season">Verano · 2026</span>
-        </div>
-        <p class="carta-subtitle">Breve. Honesta. Siempre fresca.</p>
+    <div class="historia-intro reveal">
+      <span class="section-label">La carta</span>
+      <h2>Dos temporadas.<br>Dos versiones.</h2>
+      <p>La carta de Mokadu evoluciona. Aquí, el archivo de lo que hemos sido y lo que somos ahora.</p>
+    </div>
+
+    <!-- V1 -->
+    <div class="hist-version v1 reveal">
+      <div class="hist-foto">
+        <img src="img/foto-cocina.jpg" alt="Mokadu V1 — la primera carta">
       </div>
-
-      <div class="carta-grid reveal">
-
-        <nav class="carta-nav" role="tablist" aria-label="Categorías de la carta">
-          <button class="nav-btn active" data-tab="bocados" role="tab" aria-selected="true" aria-controls="panel-bocados">
-            <span class="nav-name">Bocados</span>
-            <span class="nav-desc">El mundo en un pan. Nuestra razón de ser.</span>
-            <span class="nav-count">9 platos</span>
-          </button>
-          <button class="nav-btn" data-tab="bebidas" role="tab" aria-selected="false" aria-controls="panel-bebidas">
-            <span class="nav-name">Bebidas</span>
-            <span class="nav-desc">Cócteles de autor y vinos de pequeños productores.</span>
-            <span class="nav-count">6 opciones</span>
-          </button>
-          <button class="nav-btn" data-tab="postres" role="tab" aria-selected="false" aria-controls="panel-postres">
-            <span class="nav-name">Postres</span>
-            <span class="nav-desc">Para cerrar con algo dulce y con carácter.</span>
-            <span class="nav-count">2 dulces</span>
-          </button>
-        </nav>
-
-        <div class="carta-panel">
-
-          <ul class="dish-list active" id="panel-bocados" role="tabpanel">
-            <li class="dish-item">
-              <p class="dish-name">PDT</p>
-              <p class="dish-desc">Patatas triple cocción con mayonesa de tres ajos — frito, crudo y negro</p>
-            </li>
-            <li class="dish-item">
-              <p class="dish-name">Playeros</p>
-              <p class="dish-desc">Tostones playeros con colslaw y salsa agridulce de tamarindo · opción: cerdo asado con especias jamaicanas</p>
-            </li>
-            <li class="dish-item">
-              <p class="dish-name">Sa-aM <span class="dish-tag">Nuevo</span></p>
-              <p class="dish-desc">Saam de pollo frito, kimchi de pepino y salsa dulce de ají amarillo</p>
-            </li>
-            <li class="dish-item">
-              <p class="dish-name">Crème à la Edgar <span class="dish-tag">Nuevo</span></p>
-              <p class="dish-desc">Crema de berenjena asada, queso azul y requesón con cerezas y crujientes de maíz</p>
-            </li>
-            <li class="dish-item">
-              <p class="dish-name">Nikita <span class="dish-tag">Nuevo</span></p>
-              <p class="dish-desc">Burrito de atún o bonito macerado en sésamo y soja, arroz, crema de frijol, crema fresca, pimientos del piquillo y cebolla quemada</p>
-            </li>
-            <li class="dish-item">
-              <p class="dish-name">La Chilenita <span class="dish-tag">Nuevo</span></p>
-              <p class="dish-desc">Arepa de pollo mechado, aguacate, aliño asiático (soja, sésamo, jengibre, ajo) y col lombarda encurtida</p>
-            </li>
-            <li class="dish-item">
-              <p class="dish-name">Rosbiti <span class="dish-tag">Nuevo</span></p>
-              <p class="dish-desc">Sandwich de redondo de ternera (roastbeef), lechuga, tomate asado y albahaca</p>
-            </li>
-            <li class="dish-item">
-              <p class="dish-name">Sal del coche <span class="dish-tag">Nuevo</span></p>
-              <p class="dish-desc">Focaccia vegetal de rostí de patata, escalibada, pimiento del piquillo, mojo picón canario y salsa de ciruela · collab @saldelcoche</p>
-            </li>
-          </ul>
-
-          <ul class="dish-list" id="panel-bebidas" role="tabpanel">
-            <li class="dish-item">
-              <p class="dish-name">Espresso Martini</p>
-              <p class="dish-desc">Vodka · licor de café · espresso</p>
-            </li>
-            <li class="dish-item">
-              <p class="dish-name">Margabirra</p>
-              <p class="dish-desc">Margarita frozen con cerveza artesana</p>
-            </li>
-            <li class="dish-item">
-              <p class="dish-name">Margarita Frozen</p>
-              <p class="dish-desc">Tequila · triple sec · lima</p>
-            </li>
-            <li class="dish-item">
-              <p class="dish-name">Porn Star</p>
-              <p class="dish-desc">Vodka · fruta de la pasión · prosecco</p>
-            </li>
-            <li class="dish-item">
-              <p class="dish-name">Lemonada de Albahaca</p>
-              <p class="dish-desc">Sin alcohol · limón · albahaca fresca · soda</p>
-            </li>
-            <li class="dish-item">
-              <p class="dish-name">Vinos</p>
-              <p class="dish-desc">Selección de pequeños productores curada por Inés</p>
-            </li>
-          </ul>
-
-          <ul class="dish-list" id="panel-postres" role="tabpanel">
-            <li class="dish-item">
-              <p class="dish-name">Brigadeiros</p>
-              <p class="dish-desc">Receta de Ana, nuestra cocinera de Brasil · de chocolate negro, haba tonka o pimentón</p>
-            </li>
-            <li class="dish-item">
-              <p class="dish-name">Ice-Dwich</p>
-              <p class="dish-desc">Cookies con 5 especias chinas y helado de nata</p>
-            </li>
-          </ul>
-
+      <div class="hist-texto">
+        <span class="hist-v-bg" aria-hidden="true">V1</span>
+        <p class="hist-fecha">Ago 2025 — Jun 2026</p>
+        <span class="hist-v-label">Primera temporada</span>
+        <div class="hist-menu">
+          <div>
+            <p class="hist-cat">Empezamos</p>
+            <ul class="hist-platos">
+              <li><span>Playeros</span><span class="hist-precio">12€</span></li>
+              <li><span>Playeros Cerdos</span><span class="hist-precio">15,5€</span></li>
+            </ul>
+          </div>
+          <div>
+            <p class="hist-cat">A dos manos</p>
+            <ul class="hist-platos">
+              <li><span>Tostada mexicana</span><span class="hist-precio">12€</span></li>
+              <li><span>Porco Rosso, nuestro Banh-mi</span><span class="hist-precio">15€</span></li>
+              <li><span>Goomba</span><span class="hist-precio">13€</span></li>
+              <li><span>2DEK</span><span class="hist-precio">14€</span></li>
+              <li><span>PEC</span><span class="hist-precio">15€</span></li>
+            </ul>
+          </div>
+          <div>
+            <p class="hist-cat">Al lado</p>
+            <ul class="hist-platos">
+              <li><span>PDT — Patatas triple cocción, mayo triple ajo</span><span class="hist-precio">7€</span></li>
+            </ul>
+          </div>
+          <div>
+            <p class="hist-cat">Acabamos</p>
+            <ul class="hist-platos">
+              <li><span>Ice-Dwich — Sandwich de cookies con helado de nata</span><span class="hist-precio">8€</span></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
+
+    <!-- V2 -->
+    <div class="hist-version v2 reveal">
+      <div class="hist-foto">
+        <img src="img/foto-mesa.jpg" alt="Mokadu V2 — la carta actual">
+      </div>
+      <div class="hist-texto">
+        <span class="hist-v-bg" aria-hidden="true">V2</span>
+        <p class="hist-fecha">Jun 2026 — Hoy</p>
+        <span class="hist-v-label">Temporada actual</span>
+        <div class="hist-menu">
+          <div>
+            <p class="hist-cat">Abrimos</p>
+            <ul class="hist-platos">
+              <li>PDT</li>
+              <li>Playeros</li>
+              <li>Sa-aM</li>
+              <li>Crème à la Edgar</li>
+            </ul>
+          </div>
+          <div>
+            <p class="hist-cat">Seguimos</p>
+            <ul class="hist-platos">
+              <li>Nikita</li>
+              <li>La Chilenita</li>
+              <li>Sal del Coche</li>
+              <li>Rosbiti</li>
+            </ul>
+          </div>
+          <div>
+            <p class="hist-cat">Clap</p>
+            <ul class="hist-platos">
+              <li>Brigadeiros</li>
+              <li>Ice-Dwich</li>
+            </ul>
+          </div>
+          <div>
+            <p class="hist-cat">Fuera carta · A veces</p>
+            <ul class="hist-platos">
+              <li>Gazpacho con dadinhos de queijo</li>
+              <li>Sandwich frío de ensaladilla y anguila</li>
+              <li>Rollitos de arroz con trigueros y setas</li>
+              <li>BLT</li>
+            </ul>
+          </div>
+        </div>
+        <p class="hist-note">El menú cambia con la temporada. Para saber qué hay hoy, pregunta por WhatsApp.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- CARTA — Fotos -->
+  <section id="carta">
+
+    <div class="carta-header reveal">
+      <h2>La carta<br>en imágenes</h2>
+      <span class="carta-season">Verano · 2026</span>
+    </div>
+
+    <p class="carta-scroll-hint">Desliza para ver</p>
+
+    <div class="carta-scroll-track" role="list">
+
+      <div class="carta-foto-item" role="listitem">
+        <span class="carta-num">01</span>
+        <div class="carta-img-wrap">
+          <img src="img/foto-staff.jpg" alt="Abrimos — para empezar">
+        </div>
+        <div class="carta-caption">
+          <strong>Abrimos</strong>
+          <span>PDT · Playeros · Sa-aM · Crème à la Edgar</span>
+        </div>
+      </div>
+
+      <div class="carta-foto-item" role="listitem">
+        <span class="carta-num">02</span>
+        <div class="carta-img-wrap">
+          <img src="img/foto-platos.jpg" alt="Seguimos — los platos principales">
+        </div>
+        <div class="carta-caption">
+          <strong>Seguimos</strong>
+          <span>Nikita · La Chilenita · Sal del Coche · Rosbiti</span>
+        </div>
+      </div>
+
+      <div class="carta-foto-item" role="listitem">
+        <span class="carta-num">03</span>
+        <div class="carta-img-wrap">
+          <img src="img/foto-mesa.jpg" alt="La mesa completa">
+        </div>
+        <div class="carta-caption">
+          <strong>La mesa</strong>
+          <span>Compartir con las manos. Esa es la idea.</span>
+        </div>
+      </div>
+
+      <div class="carta-foto-item" role="listitem">
+        <span class="carta-num">04</span>
+        <div class="carta-img-wrap">
+          <img src="img/foto-cocina.jpg" alt="Clap — los postres">
+        </div>
+        <div class="carta-caption">
+          <strong>Clap</strong>
+          <span>Brigadeiros · Ice-Dwich</span>
+        </div>
+      </div>
+
+      <div class="carta-foto-item" role="listitem">
+        <span class="carta-num">05</span>
+        <div class="carta-img-wrap">
+          <img src="img/foto-bar.jpg" alt="Cócteles de autor">
+        </div>
+        <div class="carta-caption">
+          <strong>Cócteles</strong>
+          <span>Espresso Martini · Margabirra · Margarita Frozen · Porn Star</span>
+        </div>
+      </div>
+
+      <div class="carta-foto-item" role="listitem">
+        <span class="carta-num">06</span>
+        <div class="carta-img-wrap">
+          <img src="img/foto-vinos.jpg" alt="Vinos de pequeños productores">
+        </div>
+        <div class="carta-caption">
+          <strong>Vinos</strong>
+          <span>Selección de pequeños productores. Curada por Inés.</span>
+        </div>
+      </div>
+
+      <div class="carta-foto-item" role="listitem">
+        <span class="carta-num">07</span>
+        <div class="carta-img-wrap">
+          <img src="img/foto-interior.jpg" alt="El local — Licenciado Poza, 34">
+        </div>
+        <div class="carta-caption">
+          <strong>El local</strong>
+          <span>Licenciado Poza, 34 · Bilbao · Barrio de Pozas</span>
+        </div>
+      </div>
+
+      <div class="carta-foto-item" role="listitem">
+        <span class="carta-num">08</span>
+        <div class="carta-img-wrap">
+          <img src="img/foto-cocina2.jpg" alt="Detrás de la barra">
+        </div>
+        <div class="carta-caption">
+          <strong>Detrás</strong>
+          <span>La cocina de Mokadu. Donde empieza todo.</span>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="carta-footer-note">
+      El menú cambia con la temporada. Para precios, alérgenos o platos del día — escríbenos por WhatsApp.
+    </p>
+
   </section>
 
   <!-- HORARIOS -->
@@ -220,10 +317,9 @@
         <div class="horarios-intro reveal">
           <span class="section-label">Cuándo</span>
           <h2>Horarios</h2>
-          <p>Reservas disponibles por teléfono o en persona.</p>
+          <p>Reserva online o escríbenos por WhatsApp. No atendemos el teléfono durante el servicio.</p>
           <a href="https://mokadu.myrestoo.net/v2?view=reservation&lang=es" target="_blank" rel="noopener noreferrer" class="btn-primary">Reservar mesa</a>
-          <a href="https://wa.me/34621011201" target="_blank" rel="noopener noreferrer" class="btn-secondary">WhatsApp</a>
-          <a href="tel:+34621011201" class="btn-secondary">Llamar</a>
+          <a href="https://wa.me/34621011201" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="margin-top:0.75rem;">WhatsApp</a>
         </div>
         <div class="horarios-tabla reveal">
           <div class="dia-row closed">
@@ -263,8 +359,8 @@
             <span class="dato-valor">Licenciado Poza, 34<br>48009 Bilbao, Bizkaia</span>
           </div>
           <div class="contacto-dato">
-            <span class="dato-label">Teléfono</span>
-            <a href="tel:+34621011201" class="dato-valor link">+34 621 011 201</a>
+            <span class="dato-label">WhatsApp</span>
+            <a href="https://wa.me/34621011201" target="_blank" rel="noopener noreferrer" class="dato-valor link">+34 621 011 201</a>
           </div>
           <a href="https://wa.me/34621011201" target="_blank" rel="noopener noreferrer" class="btn-primary" style="display:inline-flex;align-items:center;gap:0.5rem;margin-bottom:1.5rem;">
             <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.118 1.523 5.851L.057 23.386a.5.5 0 0 0 .606.65l5.706-1.494A11.955 11.955 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.017-1.378l-.36-.214-3.724.975.994-3.63-.234-.373A9.818 9.818 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
@@ -298,13 +394,13 @@
   <footer>
     <div class="container">
       <div class="footer-inner">
-        <span class="footer-logo">mokadu</span>
+        <img src="img/logo-negro.png" alt="Mokadu" class="footer-logo-img">
         <a href="https://maps.google.com/?q=Licenciado+Poza+34+Bilbao" target="_blank" rel="noopener noreferrer" class="footer-address">Licenciado Poza, 34 · 48009 Bilbao</a>
         <div class="footer-hours">
           <span>Mar–Mié 13:30–16:30 · 19:15–23:00</span>
           <span>Jue 13:30–16:30 · 19:15–00:15</span>
           <span>Vie–Sáb 13:30–17:30 · 19:15–01:30</span>
-          <span>Lun–Dom cerrado</span>
+          <span>Lun · Dom cerrado</span>
         </div>
         <div class="footer-social">
           <a href="https://www.instagram.com/mokadubilbao" target="_blank" rel="noopener noreferrer">@mokadubilbao</a>
