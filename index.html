@@ -11,13 +11,16 @@
   <title>MOKADU — Bocadillos, cócteles y vinos · Bilbao</title>
   <link rel="icon" type="image/png" href="img/logo-m.png">
   <link rel="stylesheet" href="css/style.css">
+  <!-- BLOCK:colors -->
+<style>:root {--bg:#fdf8f0;--bg-2:#fef4e6;--fg:#1c0805;--fg-muted:#7a5c45;--red:#cc1c1c;--red-dk:#9e1a17;--red-lt:#fdecea;--border:#e8d5c0;}</style>
+<!-- /BLOCK:colors -->
 </head>
 <body>
 
   <!-- NAV -->
   <nav id="nav">
-    <a href="#hero" class="nav-logo" aria-label="Mokadu — inicio">
-      <img src="img/logo-negro.png" alt="Mokadu" class="nav-logo-img">
+    <a href="#hero" class="nav-logo" aria-label="MOKADU — inicio">
+      <img src="img/logo-negro.png" alt="MOKADU" class="nav-logo-img">
     </a>
     <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -33,24 +36,22 @@
   <!-- HERO -->
   <section id="hero">
     <div class="hero-content">
-      <div class="hero-logo-circle" aria-label="Mokadu">
-        <img src="img/logo-negro.png" alt="Mokadu">
+      <div class="hero-logo-circle" aria-label="MOKADU">
+        <img src="img/logo-negro.png" alt="MOKADU">
       </div>
       <p class="hero-tagline">Con las manos</p>
       <p class="hero-sub">Sandwiches · Cócteles · Vinos · Licenciado Poza, 34 · Bilbao</p>
-      <a href="#historia" class="btn-primary">Ver la carta</a>
-      <a href="https://mokadu.myrestoo.net/v2?view=reservation&lang=es" target="_blank" rel="noopener noreferrer" class="btn-secondary">Reservar mesa</a>
-    </div>
-    <div class="hero-scroll" aria-hidden="true">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
+      <div class="hero-btns">
+        <a href="#historia" class="btn-primary">Ver la carta</a>
+        <a href="https://mokadu.myrestoo.net/v2?view=reservation&lang=es" target="_blank" rel="noopener noreferrer" class="btn-secondary">Reservar mesa</a>
+      </div>
     </div>
   </section>
 
   <!-- CONCEPTO -->
   <section id="concepto">
     <div class="concepto-split-foto">
-      <img src="img/foto-staff.jpg" alt="Mokadu — con las manos, Bilbao">
+      <img src="img/foto-staff.jpg" alt="MOKADU — Con las manos, Bilbao">
     </div>
     <div class="concepto-split-texto reveal">
       <span class="section-label">El concepto</span>
@@ -67,28 +68,27 @@
   <section id="fotos" class="fotos-section">
     <div class="fotos-grid">
       <div class="foto-slot foto-slot--tall">
-        <img src="img/foto-staff.jpg" alt="Mokadu — con las manos">
+        <img src="img/foto-staff.jpg" alt="MOKADU — Con las manos">
       </div>
       <div class="foto-slot">
-        <img src="img/foto-mesa.jpg" alt="La mesa completa en Mokadu">
+        <img src="img/foto-mesa.jpg" alt="La mesa completa en MOKADU">
       </div>
       <div class="foto-slot">
-        <img src="img/foto-interior.jpg" alt="Interior de Mokadu — Licenciado Poza, 34">
+        <img src="img/foto-interior.jpg" alt="Interior de MOKADU">
       </div>
       <div class="foto-slot">
-        <img src="img/foto-platos.jpg" alt="Bocadillos y cócteles en Mokadu">
+        <img src="img/foto-platos.jpg" alt="Platos en MOKADU">
       </div>
       <div class="foto-slot">
         <img src="img/foto-vinos.jpg" alt="Selección de vinos de pequeños productores">
       </div>
       <div class="foto-slot foto-slot--wide">
-        <img src="img/foto-bar.jpg" alt="Mokadu — ambiente y vinos">
+        <img src="img/foto-bar.jpg" alt="MOKADU — ambiente y vinos">
       </div>
     </div>
   </section>
 
   <!-- RESEÑAS -->
-  <!-- NOTA: Reemplaza el texto de cada reseña con reseñas reales de Google Maps -->
   <section id="resenas">
 
     <div class="resenas-header">
@@ -96,7 +96,7 @@
         <span class="section-label">Google Maps</span>
         <h2>292 reseñas.<br>9,8 sobre 10.</h2>
       </div>
-      <div class="resenas-meta reveal" aria-label="9.8 sobre 10 en Google Maps">
+      <div class="resenas-meta reveal" aria-label="9,8 sobre 10 en Google Maps">
         <span class="resenas-stars-big">★★★★★</span>
         <a href="https://maps.google.com/?q=Mokadu+Licenciado+Poza+34+Bilbao" target="_blank" rel="noopener noreferrer" class="resenas-gmaps-link">Ver en Google Maps</a>
       </div>
@@ -105,61 +105,14 @@
     <p class="resenas-scroll-hint">Desliza para leer</p>
 
     <div class="resenas-track" role="list">
-
-      <div class="resena-card" role="listitem">
-        <div class="resena-stars">★★★★★</div>
-        <p class="resena-texto">Sitio diferente a lo que hay en Bilbao. El Nikita es una locura — bonito crudo, aguacate, arroz... muy bien pensado. Y los frozens excelentes. Volveremos sin duda.</p>
-        <div class="resena-autor">
-          <span class="resena-nombre">Elena R.</span>
-          <span class="resena-tiempo">Hace 2 semanas</span>
-        </div>
-      </div>
-
-      <div class="resena-card" role="listitem">
-        <div class="resena-stars">★★★★★</div>
-        <p class="resena-texto">La selección de vinos sorprende mucho para un local tan íntimo. Inés tiene muy buen ojo. Los bocadillos están a otro nivel, nada que ver con un sandwich normal.</p>
-        <div class="resena-autor">
-          <span class="resena-nombre">Mikel A.</span>
-          <span class="resena-tiempo">Hace 3 semanas</span>
-        </div>
-      </div>
-
-      <div class="resena-card" role="listitem">
-        <div class="resena-stars">★★★★★</div>
-        <p class="resena-texto">El Rosbiti y la Chilenita están impresionantes. Ambiente acogedor, equipo muy simpático. El espresso gin-tonic también lo vale. Sitio con mucha personalidad.</p>
-        <div class="resena-autor">
-          <span class="resena-nombre">Laura D.</span>
-          <span class="resena-tiempo">Hace 1 mes</span>
-        </div>
-      </div>
-
-      <div class="resena-card" role="listitem">
-        <div class="resena-stars">★★★★★</div>
-        <p class="resena-texto">Fuimos cuatro a cenar y pedimos casi todo. No había ningún plato malo. Los brigadeiros al final son adictivos. Reservad porque tiene poca mesa.</p>
-        <div class="resena-autor">
-          <span class="resena-nombre">Jon E.</span>
-          <span class="resena-tiempo">Hace 3 semanas</span>
-        </div>
-      </div>
-
-      <div class="resena-card" role="listitem">
-        <div class="resena-stars">★★★★★</div>
-        <p class="resena-texto">De los mejores sitios que hemos probado en el Ensanche. El PDT para empezar es obligatorio. La carta cambia con la temporada, lo que mantiene las ganas de volver.</p>
-        <div class="resena-autor">
-          <span class="resena-nombre">Itziar B.</span>
-          <span class="resena-tiempo">Hace 2 meses</span>
-        </div>
-      </div>
-
-      <div class="resena-card" role="listitem">
-        <div class="resena-stars">★★★★★</div>
-        <p class="resena-texto">Descubrimiento del año en Bilbao. Cócteles de calidad, vinos de pequeños productores muy bien seleccionados y comida muy elaborada. Todo a precio razonable.</p>
-        <div class="resena-autor">
-          <span class="resena-nombre">Carlos V.</span>
-          <span class="resena-tiempo">Hace 1 mes</span>
-        </div>
-      </div>
-
+      <!-- BLOCK:resenas -->
+<div class="resena-card" role="listitem"><div class="resena-stars">★★★★★</div><p class="resena-texto">Sitio diferente a lo que hay en Bilbao. El Nikita es una locura — bonito crudo, aguacate, arroz... muy bien pensado. Y los frozens excelentes. Volveremos sin duda.</p><div class="resena-autor"><span class="resena-nombre">Elena R.</span><span class="resena-tiempo">Hace 2 semanas</span></div></div>
+      <div class="resena-card" role="listitem"><div class="resena-stars">★★★★★</div><p class="resena-texto">La selección de vinos sorprende mucho para un local tan íntimo. Inés tiene muy buen ojo. Los bocadillos están a otro nivel, nada que ver con un sandwich normal.</p><div class="resena-autor"><span class="resena-nombre">Mikel A.</span><span class="resena-tiempo">Hace 3 semanas</span></div></div>
+      <div class="resena-card" role="listitem"><div class="resena-stars">★★★★★</div><p class="resena-texto">El Rosbiti y la Chilenita están impresionantes. Ambiente acogedor, equipo muy simpático. El espresso gin-tonic también lo vale. Sitio con mucha personalidad.</p><div class="resena-autor"><span class="resena-nombre">Laura D.</span><span class="resena-tiempo">Hace 1 mes</span></div></div>
+      <div class="resena-card" role="listitem"><div class="resena-stars">★★★★★</div><p class="resena-texto">Fuimos cuatro a cenar y pedimos casi todo. No había ningún plato malo. Los brigadeiros al final son adictivos. Reservad porque tiene poca mesa.</p><div class="resena-autor"><span class="resena-nombre">Jon E.</span><span class="resena-tiempo">Hace 3 semanas</span></div></div>
+      <div class="resena-card" role="listitem"><div class="resena-stars">★★★★★</div><p class="resena-texto">De los mejores sitios que hemos probado en el Ensanche. El PDT para empezar es obligatorio. La carta cambia con la temporada, lo que mantiene las ganas de volver.</p><div class="resena-autor"><span class="resena-nombre">Itziar B.</span><span class="resena-tiempo">Hace 2 meses</span></div></div>
+      <div class="resena-card" role="listitem"><div class="resena-stars">★★★★★</div><p class="resena-texto">Descubrimiento del año en Bilbao. Cócteles de calidad, vinos de pequeños productores muy bien seleccionados y comida muy elaborada. Todo a precio razonable.</p><div class="resena-autor"><span class="resena-nombre">Carlos V.</span><span class="resena-tiempo">Hace 1 mes</span></div></div>
+<!-- /BLOCK:resenas -->
     </div>
 
   </section>
@@ -170,10 +123,10 @@
     <div class="historia-intro reveal">
       <span class="section-label">La carta</span>
       <h2>Dos temporadas.<br>Dos versiones.</h2>
-      <p>La carta de Mokadu evoluciona. Aquí, el archivo de lo que hemos sido y lo que somos ahora.</p>
+      <p>La carta de MOKADU evoluciona. Aquí, el archivo de lo que hemos sido y lo que somos ahora.</p>
     </div>
 
-    <!-- V1 -->
+    <!-- BLOCK:historia -->
     <div class="hist-version v1 reveal">
       <div class="hist-foto">
         <img src="img/foto-cocina.jpg" alt="Mokadu V1 — la primera carta">
@@ -216,7 +169,6 @@
       </div>
     </div>
 
-    <!-- V2 -->
     <div class="hist-version v2 reveal">
       <div class="hist-foto">
         <img src="img/foto-mesa.jpg" alt="Mokadu V2 — la carta actual">
@@ -264,6 +216,7 @@
         <p class="hist-note">El menú cambia con la temporada. Para saber qué hay hoy, pregunta por WhatsApp.</p>
       </div>
     </div>
+<!-- /BLOCK:historia -->
 
   </section>
 
@@ -278,7 +231,7 @@
     <p class="carta-scroll-hint">Desliza para ver</p>
 
     <div class="carta-scroll-track" role="list">
-
+      <!-- BLOCK:carta_carrusel -->
       <div class="carta-foto-item" role="listitem">
         <span class="carta-num">01</span>
         <div class="carta-img-wrap">
@@ -363,10 +316,10 @@
         </div>
         <div class="carta-caption">
           <strong>Detrás</strong>
-          <span>La cocina de Mokadu. Donde empieza todo.</span>
+          <span>La cocina de MOKADU. Donde empieza todo.</span>
         </div>
       </div>
-
+<!-- /BLOCK:carta_carrusel -->
     </div>
 
     <p class="carta-footer-note">
@@ -387,6 +340,7 @@
           <a href="https://wa.me/34621011201" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="margin-top:0.75rem;">WhatsApp</a>
         </div>
         <div class="horarios-tabla reveal">
+          <!-- BLOCK:horarios_tabla -->
           <div class="dia-row closed">
             <span class="dia">Lunes</span>
             <span class="hora">Cerrado</span>
@@ -407,6 +361,7 @@
             <span class="dia">Domingo</span>
             <span class="hora">Cerrado</span>
           </div>
+<!-- /BLOCK:horarios_tabla -->
         </div>
       </div>
     </div>
@@ -422,7 +377,7 @@
       </div>
 
       <div class="faq-list">
-
+        <!-- BLOCK:faq -->
         <div class="faq-item">
           <button class="faq-q" aria-expanded="false">¿Cómo puedo hacer una reserva?</button>
           <div class="faq-a" role="region">Por <a href="https://mokadu.myrestoo.net/v2?view=reservation&lang=es" target="_blank" rel="noopener noreferrer">Restoo</a> (disponible 24h online) o escribiéndonos por WhatsApp. No atendemos el teléfono durante el servicio, así que reserva siempre por uno de esos dos canales.</div>
@@ -462,7 +417,7 @@
           <button class="faq-q" aria-expanded="false">¿Cómo cancelo mi reserva?</button>
           <div class="faq-a" role="region">Entra en <a href="https://mokadu.myrestoo.net/v2?view=reservation&lang=es" target="_blank" rel="noopener noreferrer">Restoo</a> y gestiona tu reserva desde el email de confirmación que recibiste. Si tienes algún problema, escríbenos por WhatsApp.</div>
         </div>
-
+<!-- /BLOCK:faq -->
       </div>
     </div>
   </section>
@@ -489,11 +444,11 @@
           <div class="contacto-social">
             <a href="https://www.instagram.com/mokadubilbao" target="_blank" rel="noopener noreferrer">
               <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
-              Instagram
+              @mokadubilbao
             </a>
             <a href="https://www.tiktok.com/@mokadu.bilbao" target="_blank" rel="noopener noreferrer">
               <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.3 6.3 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.93a8.19 8.19 0 0 0 4.79 1.54V7.02a4.86 4.86 0 0 1-1.02-.33z"/></svg>
-              TikTok
+              @mokadu.bilbao
             </a>
           </div>
         </div>
@@ -502,7 +457,7 @@
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.24!2d-2.9281!3d43.2627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e4f87c2b9e37d%3A0x0!2sLicenciado+Poza%2C+34%2C+48009+Bilbao!5e0!3m2!1ses!2ses!4v1"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
-            title="Ubicación de MOKADU en Bilbao"
+            title="Ubicación de MOKADU"
             allowfullscreen>
           </iframe>
         </div>
@@ -514,19 +469,21 @@
   <footer>
     <div class="container">
       <div class="footer-inner">
-        <img src="img/logo-negro.png" alt="Mokadu" class="footer-logo-img">
-        <a href="https://maps.google.com/?q=Licenciado+Poza+34+Bilbao" target="_blank" rel="noopener noreferrer" class="footer-address">Licenciado Poza, 34 · 48009 Bilbao</a>
+        <img src="img/logo-negro.png" alt="MOKADU" class="footer-logo-img">
+        <a href="https://maps.google.com/?q=Licenciado+Poza+34+Bilbao" target="_blank" rel="noopener noreferrer" class="footer-address">Licenciado Poza, 34 · 48009 Bilbao, Bizkaia</a>
         <div class="footer-hours">
+          <!-- BLOCK:horarios_footer -->
           <span>Mar–Mié 13:30–16:30 · 19:15–23:00</span>
           <span>Jue 13:30–16:30 · 19:15–00:15</span>
           <span>Vie–Sáb 13:30–17:30 · 19:15–01:30</span>
           <span>Lun · Dom cerrado</span>
+<!-- /BLOCK:horarios_footer -->
         </div>
         <div class="footer-social">
           <a href="https://www.instagram.com/mokadubilbao" target="_blank" rel="noopener noreferrer">@mokadubilbao</a>
           <a href="https://wa.me/34621011201" target="_blank" rel="noopener noreferrer">WhatsApp</a>
         </div>
-        <p class="footer-copy">© 2026 Mokadu · <a href="/privacidad.html">Política de privacidad</a></p>
+        <p class="footer-copy">© 2026 MOKADU · <a href="/privacidad.html">Política de privacidad</a></p>
       </div>
     </div>
   </footer>
