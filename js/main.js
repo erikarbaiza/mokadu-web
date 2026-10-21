@@ -1,14 +1,37 @@
 // ── Hero GSAP entrance ──
 if (typeof gsap !== 'undefined') {
-  gsap.set('.hero-logo-circle', { scale: 0.75 });
-  gsap.set(['.hero-tagline', '.hero-sub', '.hero-btns'], { y: 36 });
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  const heroTl = gsap.timeline({ delay: 0.1 });
-  heroTl
-    .to('.hero-logo-circle', { opacity: 1, scale: 1, duration: 0.9, ease: 'back.out(1.5)' })
-    .to('.hero-tagline',     { opacity: 1, y: 0, duration: 0.85, ease: 'power3.out' }, '-=0.4')
-    .to('.hero-sub',         { opacity: 1, y: 0, duration: 0.6,  ease: 'power2.out' }, '-=0.45')
-    .to('.hero-btns',        { opacity: 1, y: 0, duration: 0.5,  ease: 'power2.out' }, '-=0.35');
+  if (reduced) {
+    gsap.set(['.hero-logo-circle', '.hero-tagline', '.hero-sub', '.hero-btns'], { opacity: 1 });
+  } else {
+    gsap.set('.hero-logo-circle', { scale: 0.8, y: -10 });
+    gsap.set('.hero-tagline',     { y: 50, letterSpacing: '0.18em' });
+    gsap.set(['.hero-sub', '.hero-btns'], { y: 24 });
+
+    const heroTl = gsap.timeline({ delay: 0.15 });
+    heroTl
+      .to('.hero-logo-circle', {
+        opacity: 1, scale: 1, y: 0,
+        duration: 1, ease: 'back.out(1.4)'
+      })
+      .to('.hero-tagline', {
+        opacity: 1, y: 0, letterSpacing: '0.04em',
+        duration: 0.9, ease: 'power3.out'
+      }, '-=0.45')
+      .to('.hero-sub', {
+        opacity: 1, y: 0,
+        duration: 0.55, ease: 'power2.out'
+      }, '-=0.35')
+      .to('.hero-btns', {
+        opacity: 1, y: 0,
+        duration: 0.5, ease: 'power2.out'
+      }, '-=0.3')
+      .to('.hero-logo-circle', {
+        y: -6, duration: 2.2, ease: 'sine.inOut',
+        yoyo: true, repeat: -1
+      }, '+=0.2');
+  }
 }
 
 // ── NAV scroll ──
