@@ -1,3 +1,16 @@
+// ── Hero GSAP entrance ──
+if (typeof gsap !== 'undefined') {
+  gsap.set('.hero-logo-circle', { scale: 0.75 });
+  gsap.set(['.hero-tagline', '.hero-sub', '.hero-btns'], { y: 36 });
+
+  const heroTl = gsap.timeline({ delay: 0.1 });
+  heroTl
+    .to('.hero-logo-circle', { opacity: 1, scale: 1, duration: 0.9, ease: 'back.out(1.5)' })
+    .to('.hero-tagline',     { opacity: 1, y: 0, duration: 0.85, ease: 'power3.out' }, '-=0.4')
+    .to('.hero-sub',         { opacity: 1, y: 0, duration: 0.6,  ease: 'power2.out' }, '-=0.45')
+    .to('.hero-btns',        { opacity: 1, y: 0, duration: 0.5,  ease: 'power2.out' }, '-=0.35');
+}
+
 // ── NAV scroll ──
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
